@@ -2,7 +2,7 @@ FROM openjdk:8-jdk-alpine
 VOLUME /tmp
 ARG JAVA_OPTS
 ENV JAVA_OPTS=$JAVA_OPTS
-COPY target/Tutorial-1.0-SNAPSHOT.jar sedevops.jar
+COPY target/SE_DEVOPS-1.0-SNAPSHOT.jar sedevops.jar
 EXPOSE 3000
 ENTRYPOINT exec java $JAVA_OPTS -jar sedevops.jar
 # For Spring-Boot project, use the entrypoint below to reduce Tomcat startup time.
